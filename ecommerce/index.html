@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/515BNisImJL.jpg" alt="Smart watch">
+                <h2>Product 1</h2>
+                <p>Description: This is the first product.</p>
+                <p>Price: $10.00</p>
+                <button onclick="addToCart('Product 1', 'This is the first product.', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.jiomart.com/images/product/original/493664716/fire-bolt-unity-bsw092-smart-watch-black-digital-o493664716-p597514267-0-202301121007.jpeg?im=Resize=(420,420)" alt="digital watch">
+                <h2>Product 2</h2>
+                <p>Description: This is the second product.</p>
+                <p>Price: $15.00</p>
+                <button onclick="addToCart('Product 2', 'This is the second product.', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://www.boat-lifestyle.com/cdn/shop/products/black2.png?v=1654312291" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Description: This is the third product.</p>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart('Product 3', 'This is the third product.', 20)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/7454491/1.jpg?6278" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Description: This is the fourth product.</p>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Product 4', 'This is the fourth product.', 25)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/d/1d34122IB-1563_1.jpg?tr=w-500,pr-true" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>Description: This is the fifth product.</p>
+                <p>Price: $30.00</p>
+                <button onclick="addToCart('Product 5', 'This is the fifth product.', 30)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61BWlB9hJML._AC_UF894,1000_QL80_.jpg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>Description: This is the sixth product.</p>
+                <p>Price: $35.00</p>
+                <button onclick="addToCart('Product 6', 'This is the sixth product.', 35)">Add to Cart</button>
+            </div>
+        </div>
+
+        <h1>Shopping Cart</h1>
+        <button id="view-cart" onclick="viewCart()">View Cart</button>
+        <div id="cart">
+            <!-- Cart items will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
